@@ -1,0 +1,6 @@
+gelan-c-det.pt filter=lfs diff=lfs merge=lfs -text
+gelan-s.pt filter=lfs diff=lfs merge=lfs -text
+yolov9-c.pt filter=lfs diff=lfs merge=lfs -text
+yolov9-e-converted.pt filter=lfs diff=lfs merge=lfs -text
+yolov9-e.pt filter=lfs diff=lfs merge=lfs -text
+yolov9-s.pt filter=lfs diff=lfs merge=lfs -text

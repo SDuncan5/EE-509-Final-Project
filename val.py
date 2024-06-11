@@ -198,6 +198,7 @@ def run(
         targets[:, 2:] *= torch.tensor((width, height, width, height), device=device)  # to pixels
         lb = [targets[targets[:, 0] == i, 1:] for i in range(nb)] if save_hybrid else []  # for autolabelling
         with dt[2]:
+            preds = preds[0][1] if isinstance(preds[0], list) else preds[0]#add # ALERT ADDED
             preds = non_max_suppression(preds,
                                         conf_thres,
                                         iou_thres,
