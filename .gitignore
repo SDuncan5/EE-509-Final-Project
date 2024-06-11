@@ -1,0 +1,2 @@
+# Ignore weights files b/c they're too large
+*.pt
